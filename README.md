@@ -2,6 +2,7 @@
 
 ## Create Cluster
 Send this request to the first node to initiate your cluster:
+
 `curl -X POST https://<node-ip>:9443/v1/bootstrap/create_cluster -H 'Content-Type: application/json' -H 'cache-control: no-cache' -d @create-demo-cluster.json -k -I`
 
 Example Storage Paths: 
@@ -13,8 +14,10 @@ Example Storage Paths:
 
 ## Join Cluster 
 Send this request to join subsequent nodes to the cluster: 
+
 `curl -X POST https://<node-ip>/v1/bootstrap/join_cluster -H 'Content-Type: application/json' -H 'cache-control: no-cache' -u <email>:<password> -d @join-demo-cluster-1.json -k -i`
 
 ## Create Database (non-CRDB)
 Send this request to a node in the cluster to create a database:
+
 `curl -X POST https://<node-ip>:9443/v1/bdbs -H 'cache-control: no-cache' -H 'Content-Type: application/json' -u <email>:<password> -d @create-db-1.json -k -i`
