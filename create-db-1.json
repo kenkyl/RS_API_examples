@@ -1,0 +1,21 @@
+{
+    "name": "api-test-db-1",
+    "memory_size": 10000000000,
+    "replication": true,
+    "eviction_policy": "volatile-lru",
+    "sharding": false,
+    "shards_count": 1,
+    "rack_aware": false,
+    "type": "redis",
+    "oss_cluster": false,
+    "proxy_policy": "single",
+    "shards_placement": "dense",
+    "port": 12345,
+    "data_persistence": "snapshot",
+    "snapshot_policy": [
+        {
+            "secs": 3600,
+            "writes": 100
+        }
+    ]
+}

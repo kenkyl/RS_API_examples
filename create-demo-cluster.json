@@ -1,0 +1,22 @@
+{
+    "action": "create_cluster",
+    "cluster": {
+       "nodes": [],
+       "name": "<cluster-fqdn>"
+    },
+    "node": {
+       "paths": {
+          "persistent_path": "<persistent-storage-path>",
+          "ephemeral_path": "<ephemeral-storage-path>"
+       },
+       "identity": {
+          "addr":"<internal-ip>",
+          "external_addr":["<external-ip>"]
+       }
+    },
+    "license": "",
+    "credentials": {
+       "username": "<email>",
+       "password": "<password>"
+    }
+}

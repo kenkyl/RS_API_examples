@@ -1,0 +1,25 @@
+{
+    "action": "join_cluster",
+    "cluster": {
+        "nodes": [
+            "<ip-of-existing-node-in-cluster>"
+        ],
+        "name": "<cluster-fqdn>"
+    },
+    "node": {
+        "paths": {
+            "persistent_path": "<persistent-storage-path>",
+            "ephemeral_path": "<ephemeral-storage-path>"
+        },
+        "identity": {
+            "addr": "<internal-ip>",
+            "external_addr": [
+                "<external-ip>"
+            ]
+        }
+    },
+    "credentials": {
+        "username": "<email>",
+        "password": "<password>"
+    }
+}
